@@ -3,7 +3,6 @@ import Home from './Home'
 import Sidebar from './Sidebar'
 import UserDashboard from './Dashboard'
 import CatProfile from './CatProfile'
-import CatsList from './CatList'
 import Footer from './Footer'
 import './App.css'
 

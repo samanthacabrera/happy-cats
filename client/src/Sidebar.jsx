@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi'; // Import icons correctly
+import { FiMenu, FiX } from 'react-icons/fi'; 
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Sidebar = () => {
             <Link to="dashboard" className="block py-2 px-4 hover:underline">Dashboard</Link>
           </li>
           <li>
-            <Link to="/" className="block py-2 px-4 hover:underline">Messages</Link>
+            <Link to="dashboard" className="block py-2 px-4 hover:underline">Messages</Link>
           </li>
           <li>
             <Link to="/" className="block py-2 px-4 hover:underline">Profile 1</Link>
