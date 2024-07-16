@@ -10,8 +10,8 @@ const Sidebar = () => {
   };
 
     return (
-      <>
-    <div className={`bg-gradient-to-r from-cyan-500 to-blue-500 text-white h-screen w-64 flex flex-col justify-between fixed top-0 left-0 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-64'}`}>
+  <>
+    <div className={`bg-gradient-to-r from-cyan-500 to-blue-500 opacity-80 text-white h-screen w-64 flex flex-col justify-between fixed top-0 left-0 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-64'}`}>
       <div className="mt-12 p-4">
         <h2 className="text-2xl font-bold">Welcome, user!</h2>
       </div>
@@ -22,13 +22,10 @@ const Sidebar = () => {
             <Link to="dashboard" className="block py-2 px-4 hover:underline">Dashboard</Link>
           </li>
           <li>
-            <Link to="dashboard" className="block py-2 px-4 hover:underline">Messages</Link>
+            <Link to="blog" className="block py-2 px-4 hover:underline">Resources</Link>
           </li>
           <li>
-            <Link to="/" className="block py-2 px-4 hover:underline">Profile 1</Link>
-          </li>
-          <li>
-            <Link to="/" className="block py-2 px-4 hover:underline">Profile 2</Link>
+            <Link to="social" className="block py-2 px-4 hover:underline">Community</Link>
           </li>
         </ul>
       </nav>

@@ -15,3 +15,8 @@ h2,
 h3 {
   font-family: "Comfortaa", sans-serif;
 }
+
+.heading {
+  font-size: 14rem;
+  letter-spacing: -50px;
+}
