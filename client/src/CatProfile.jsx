@@ -1,34 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-const CatProfile = ({ cat }) => {
+const CatProfile = () => {
+  const { cat_id } = useParams();
+  const [cat, setCat] = useState(null);
+
+  useEffect(() => {
+    const fetchCat = async () => {
+      try {
+        const response = await fetch(`/api/cats/${cat_id}`);
+        if (!response.ok) {
+          throw new Error('Cat not found');
+        }
+        const catData = await response.json();
+        setCat(catData);
+      } catch (error) {
+        console.error('Error fetching cat:', error);
+      }
+    };
+
+    fetchCat();
+  }, [cat_id]);
+
   if (!cat) {
-    return <div>Loading...</div>; // or handle differently based on your UI/UX needs
+    return <div className="flex justify-center items-center h-screen">Loading...</div>;
   }
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold text-gray-800">{cat.name}</h2>
-        <span className="text-gray-600">{cat.age} years old</span>
-      </div>
-      <div className="mb-4">
-        <img src={cat.image} alt={cat.name} className="rounded-lg w-full h-auto" />
-      </div>
-      <div className="mb-4">
-        <h3 className="text-xl font-bold text-gray-700 mb-2">About {cat.name}</h3>
-        <p className="text-gray-600">{cat.description}</p>
-      </div>
-      <div className="mb-4">
-        <h3 className="text-xl font-bold text-gray-700 mb-2">Owner Information</h3>
-        <p className="text-gray-600">Owner: {cat.owner}</p>
-        <p className="text-gray-600">Location: {cat.location}</p>
-        {/* Add more owner details as needed */}
-      </div>
-      <div className="mt-4">
-        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md">
-          Contact Owner
-        </button>
-      </div>
+    <div className="w-full h-full flex flex-col justify-center items-center bg-gray-100 p-4">
+      <h2 className="text-3xl font-bold text-blue-500 mb-4">Cat Profile</h2>
+      <p className="text-xl text-gray-800 mb-2">Name: {cat.name}</p>
+      <p className="text-xl text-gray-800 mb-2">Age: {cat.age}</p>
+      <p className="text-xl text-gray-800 mb-2">Breed: {cat.breed}</p>
+      {/* Add more details as needed */}
     </div>
   );
 };

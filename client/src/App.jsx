@@ -3,23 +3,23 @@ import Home from './Home'
 import Sidebar from './Sidebar'
 import UserDashboard from './Dashboard'
 import CatProfile from './CatProfile'
-import Blog from './Blog';
-import Footer from './Footer'
+import Social from './Social';
 import './App.css'
 
-function App() {
 
+function App() {
+  const user_id = 1;
+  const user = "Alice"
   return (
     <>    
       <Router>
-        <Sidebar />
+        <Sidebar user={user} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<UserDashboard />} />
-          <Route path="/profile/:id" element={<CatProfile />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/dashboard" element={<UserDashboard user_id={user_id} />} />
+          <Route path="/cats/:cat_id" element={<CatProfile />} /> 
+          <Route path="/social" element={<Social />} />
         </Routes>
-        <Footer/>
       </Router>
     </>
   )

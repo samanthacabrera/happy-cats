@@ -2,6 +2,8 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 body,
 html {
@@ -14,9 +16,4 @@ h1,
 h2,
 h3 {
   font-family: "Comfortaa", sans-serif;
-}
-
-.heading {
-  font-size: 14rem;
-  letter-spacing: -50px;
 }
