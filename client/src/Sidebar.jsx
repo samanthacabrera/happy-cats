@@ -13,7 +13,7 @@ const Sidebar = ({ user}) => {
     <>
       <div className={`bg-gradient-to-l from-slate-700 to-slate-600 text-white h-screen w-64 flex flex-col justify-between fixed top-0 left-0 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0 z-10' : '-translate-x-64'}`}>
         <div className="mt-12 p-4">
-          <h2 className="text-2xl font-bold">Welcome, {user}</h2>
+          <h2 className="text-2xl font-bold">Welcome</h2>
         </div>
 
         <nav className="flex-1 text-white">

@@ -8,12 +8,11 @@ import './App.css'
 
 
 function App() {
-  const user_id = 1;
-  const user = "Alice"
+const user_id = 1
   return (
-    <>    
+    <div> 
       <Router>
-        <Sidebar user={user} />
+        <Sidebar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/dashboard" element={<UserDashboard user_id={user_id} />} />
@@ -21,7 +20,7 @@ function App() {
           <Route path="/social" element={<Social />} />
         </Routes>
       </Router>
-    </>
+    </div>
   )
 }
 

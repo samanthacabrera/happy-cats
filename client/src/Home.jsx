@@ -2,6 +2,7 @@ import React from "react";
 import CatsList from "./CatList";
 import Approach from "./Approach";
 import Reviews from "./Reviews";
+import Tips from "./Tips";
 
 function Home() {
   return (
@@ -16,19 +17,19 @@ function Home() {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 w-3/4 md:w-1/2 text-white text-center mb-8">
-          <h1 className="text-8xl font-bold mb-8">Happy Cats</h1>
+          <h1 className="text-4xl lg:text-7xl font-bold my-8">Happy Cats</h1>
           <p className="text-lg leading-relaxed">
-            Here at Happy Cats, we understand that our whiskered friends have their own unique ways of making connections. Our platform is designed with their comfort and happiness in mind.
+            Here at <span className="italic">Happy Cats</span> we understand that our whiskered friends have their own unique ways of making connections. Our platform is designed with their comfort and happiness in mind.
           </p>
             <CatsList />
         </div>
       </section>
-      <div className="my-16">
-        <Approach />
-      </div>
-        <div className="my-16">
-        <Reviews/>
-      </div>
+      
+        <section className="space-y-24 flex flex-col justify-center">
+            <Approach />
+            <Tips/>
+            <Reviews/>
+        </section>
     </>
   );
 }

@@ -7,17 +7,17 @@ const reviews = [
   {
     id: 1,
     text: "This platform has been amazing for my cat! She has made so many new friends.",
-    author: "Jane Doe",
+    author: "Samantha Cabrera",
   },
   {
     id: 2,
     text: "A fantastic way to arrange playdates for my cats. Highly recommend!",
-    author: "John Smith",
+    author: "Justin Miller",
   },
   {
     id: 3,
     text: "My cats love it! They have never been happier and more social.",
-    author: "Alice Johnson",
+    author: "Ares Cabriller",
   },
 ];
 

@@ -1,50 +1,53 @@
 import React from 'react';
+// import { FaPaw, FaCog, FaUsers } from 'react-icons/fa';
 
 const Approach = () => {
   return (
-    <div className="max-w-5xl mx-auto p-8 bg-white rounded-lg shadow-lg mt-20">
-      <h1 className="text-4xl font-extrabold text-gray-900 mb-6 text-center">Differences Between Cats and Dogs in Socializing</h1>
-      <p className="text-xl text-gray-700 mb-8 text-center">
-        Arranging playdates for cats can be a delightful experience, but it’s essential to recognize the unique ways cats socialize compared to dogs. Here are some key differences to help you understand your feline friends better:
-      </p>
-      <div className="mb-8">
-        <ul className="list-disc list-inside text-gray-700">
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Territorial Nature:</span> Cats are generally more territorial than dogs. They are often very attached to their home environment and can be cautious when new animals enter their space.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Independence:</span> Cats are known for their independence. They might not seek constant companionship and can be selective about their social interactions. Some cats enjoy solitude and may prefer fewer playdates.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Gradual Introduction:</span> Unlike dogs, cats usually require a gradual introduction process when meeting new animals. Sudden interactions can cause stress and may lead to aggression. It's best to introduce cats slowly and in controlled environments.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Body Language:</span> Cats communicate through subtle body language. A friendly cat may purr, slow blink, or rub against another cat, while an aggressive or fearful cat might hiss, arch its back, or puff up its fur. Understanding these signals can help you gauge their comfort levels during playdates.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Play Styles:</span> Cats often engage in solitary play, such as chasing a toy or playing with a string. They might be less inclined to play interactively with other cats, so providing individual toys during playdates can help keep them entertained.
-          </li>
-        </ul>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-1 px-40">
+      {/* Text Section 1 */}
+      <div className="p-8 md:h-screen flex items-center">
+        <div className="mb-8 text-left">
+          <h2 className="text-8xl font-semibold mb-4">Tailored for Cats</h2>
+          <p className="text-2xl">
+            Our app understands the unique needs of cats, from their territorial instincts to their independent nature, ensuring every playdate is enjoyable and stress-free.
+          </p>
+        </div>
       </div>
-      <div>
-        <h2 className="text-3xl font-semibold text-gray-900 mb-4">Tips for Successful Cat Playdates:</h2>
-        <ul className="list-disc list-inside text-gray-700">
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Gradual Introductions:</span> Start with brief, supervised meet-and-greets and gradually increase the duration as the cats become more comfortable with each other.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Safe Spaces:</span> Ensure each cat has a safe space to retreat to if they feel overwhelmed. This helps reduce stress and potential conflicts.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Comfort Items:</span> Bring familiar items like toys or blankets to help your cat feel more at ease in a new environment.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Monitor Body Language:</span> Pay close attention to the cats' body language. Look for signs of stress or aggression and intervene if necessary to prevent any negative interactions.
-          </li>
-          <li className="mb-4">
-            <span className="font-bold text-blue-600">Engage in Parallel Play:</span> Set up activities where cats can play near each other but not directly interact. This helps them get used to each other's presence without feeling threatened.
-          </li>
-        </ul>
+      {/* Icon Section 1 */}
+      <div className="md:h-screen flex items-center justify-center hidden md:block">
+        <div className="text-center">
+          {/* <FaPaw className="text-9xl text-slate-700" /> */}
+        </div>
+      </div>
+      {/* Icon Section 2 */}
+      <div className="md:h-screen flex items-center justify-center hidden md:block">
+        <div className="text-center">
+          {/* <FaCog className="text-9xl text-slate-700" /> */}
+        </div>
+      </div>
+      {/* Text Section 2 */}
+      <div className="p-8 md:h-screen flex items-center">
+        <div className="mb-8 text-left pr-12">
+          <h2 className="text-8xl font-semibold mb-4">Personalized Experience</h2>
+          <p className="text-2xl">
+            Customize playdates based on your cat’s preferences and personality traits, ensuring each interaction is tailored to their comfort and enjoyment.
+          </p>
+        </div>
+      </div>
+      {/* Text Section 3 */}
+      <div className="p-8 md:h-screen flex items-center">
+        <div className="mb-8 text-left">
+          <h2 className="text-8xl font-semibold mb-4">Community Support</h2>
+          <p className="text-2xl">
+            Join a supportive community of cat enthusiasts who share tips, stories, and advice on socializing and caring for cats.
+          </p>
+        </div>
+      </div>
+      {/* Icon Section 3 */}
+      <div className="md:h-screen flex items-center justify-center hidden md:block">
+        <div className="text-center">
+          {/* <FaUsers className="text-9xl text-slate-700" /> */}
+        </div>
       </div>
     </div>
   );
