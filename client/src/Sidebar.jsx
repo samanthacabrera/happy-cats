@@ -12,20 +12,14 @@ const Sidebar = ({ user}) => {
   return (
     <>
       <div className={`bg-gradient-to-l from-slate-700 to-slate-600 text-white h-screen w-64 flex flex-col justify-between fixed top-0 left-0 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0 z-10' : '-translate-x-64'}`}>
-        <div className="mt-12 p-4">
-          <h2 className="text-2xl font-bold">Welcome</h2>
-        </div>
 
-        <nav className="flex-1 text-white">
+        <nav className="flex-1 mt-24 text-white">
           <ul className="space-y-4">
             <li>
               <Link to="/" className="block py-2 px-4 hover:underline">Home</Link>
             </li>
             <li>
               <Link to="dashboard" className="block py-2 px-4 hover:underline">Dashboard</Link>
-            </li>
-            <li>
-              <Link to="social" className="block py-2 px-4 hover:underline">Community</Link>
             </li>
           </ul>
         </nav>

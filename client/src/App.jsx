@@ -3,7 +3,6 @@ import Home from './Home'
 import Sidebar from './Sidebar'
 import UserDashboard from './Dashboard'
 import CatProfile from './CatProfile'
-import Social from './Social';
 import './App.css'
 
 
@@ -17,7 +16,6 @@ const user_id = 1
           <Route exact path="/" element={<Home />} />
           <Route path="/dashboard" element={<UserDashboard user_id={user_id} />} />
           <Route path="/cats/:cat_id" element={<CatProfile />} /> 
-          <Route path="/social" element={<Social />} />
         </Routes>
       </Router>
     </div>

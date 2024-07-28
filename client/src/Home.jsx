@@ -1,8 +1,5 @@
 import React from "react";
 import CatsList from "./CatList";
-import Approach from "./Approach";
-import Reviews from "./Reviews";
-import Tips from "./Tips";
 
 function Home() {
   return (
@@ -24,12 +21,6 @@ function Home() {
             <CatsList />
         </div>
       </section>
-      
-        <section className="space-y-24 flex flex-col justify-center">
-            <Approach />
-            <Tips/>
-            <Reviews/>
-        </section>
     </>
   );
 }
